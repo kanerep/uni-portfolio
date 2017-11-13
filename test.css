@@ -77,6 +77,7 @@ nav a:hover, nav a:focus {
     background-image: url(images/laptopcode2000.jpg);
     background-repeat: no-repeat;
     padding: 3.2em;
+    opacity: 0.9;
 }
 
 .hero-title {
@@ -114,21 +115,29 @@ nav a:hover, nav a:focus {
     color: #e9e9e9;
 }
 
-.about-me {
+.container-about {
+ width: 95%;
+    max-width: 70em;
+    margin: 0 auto;
+}
+.about-textbox {
     background-color: #343434;
     color: #f9f9f9;
     padding: 3em;
     outline: 3px solid #8f8787;
     outline-offset: -3em;
     position: relative;
+    width: 100vw;
+    margin-left: -2.7%;
 }
 
 .about-me h1 {
+    font-size: 1.8rem;
     color: #fff;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: -0.3em;
+    top: -0em;
     padding: 0 0.3em;
     background: #343434;
 }
@@ -140,35 +149,28 @@ nav a:hover, nav a:focus {
     
 }
 
-.grid-wrapper {
-    display: grid;
-    grid-template-columns:(3, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    max-width: 100%;
-    margin: 0 auto;
-    grid-template-areas: 
-    "header header header"
-    "main main main"
-    "main main main"
-    "footer footer footer";
-}
-
 .skills {
-    background: #e9e9e9;
-    padding: 10px;
+    padding: 2em 1em 1em;
 }
 
-.skills h2 {
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
+.skills ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
+.skills li {
+    margin: 1em;
+    background: #fff;
+    color: #333;
+}
 
+.card-content {
+    padding: 1.5em;
+}
 .center 
 {
-    position: relative;
-    top:  150%;
-    margin: 0x;
+    margin: 0 auto;
 }
 
 .imgBox
@@ -273,10 +275,6 @@ nav a:hover, nav a:focus {
     text-align: center;
 }
 
-.brand span {
-    color: #fff;
-}
-
 .wrapper-contact{
     box-shadow: 0 0 20px 0 rgba(124, 122, 122, 0.5);
 }
@@ -341,6 +339,7 @@ nav a:hover, nav a:focus {
 footer {
  background: #343434;
  color: #e9e9e9;
+ padding: 0.5em;
 }
 
 footer p {
@@ -361,31 +360,67 @@ footer p {
  padding: 0.5em;
 }
 
-.copyright {
-    &::before {
-        content: '';
-        display: block;
-        height: 1px;
-        background: #e9e9e9;
-        margin: 4em auto;
-        width: 25%;
-    }
-}
-
-
-hr {
-    background-color:#8f8787;
-    width: 25%;
-    display: block;
-    margin: 0 auto;
-    border: none;
-    height: 1px;
-}
-
 
 /* Desktop */
 
-@media screen and (min-width:700px) {
+@media screen and (min-width:750px) {
+    
+   nav a {
+       font-size: 1.1em;
+    }
+     .hero-title {
+         font-size: 3.5rem;   
+    }
+    
+    .hero {
+     padding:4em;   
+    }
+    
+    .about-me {
+     background-image:url(images/starsInSky.jpeg);
+     background-repeat: no-repeat;
+     background-position: center;
+     padding: 5em;
+     margin-top: 40px;
+}
+
+    .about-textbox {
+        width: 55%;
+        text-align: left;
+        margin-left: 2.7%;
+        box-shadow: 0 0 4em 0 rgba(0,0,0,0.25);
+    }
+
+    
+    .grid {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: auto;
+     max-width: 1200px;
+    }
+    
+    .skills {
+        background: #e9e9e9;
+        margin-top: 3em;
+    }
+    
+    .skills ul {
+     grid-column: 2/4;
+     display: flex;
+    }
+    
+    .skills li {
+     width: 35%;   
+    }
+    
+      .center {
+     grid-column: 2/4;
+     display: flex;
+    justify-content: ;
+    }
+    
+
+    
     .wrapper-contact {
         display: grid;
         grid-template-columns: 1fr 2fr; 
@@ -402,46 +437,3 @@ hr {
     }
 }
 
-
-
-@media screen and (min-width:760px){
-.grid-wrapper {
-    display: grid;
-    grid-template-columns:(3, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    max-width: 100%;
-    margin: 0 auto;
-    grid-gap: 0px;
-    grid-template-areas: 
-    "header header header"
-    "main main main"
-    "footer footer footer";
-   
-}
-}
-
-
-
-header {
-    grid-area: header;
-}
-
-main {
-    grid-area: main;
-}
-
-nav {
-    grid-area: nav;
-}
-
-section {
-    grid-area: section;
-}
-
-aside {
-    grid-area: aside;
-}
-
-footer {
-    grid-area: footer;
-}
