@@ -11,49 +11,138 @@
 <body>
 <div class="grid-wrapper">
 <header>
-     <div class="hero">
-      <img src="/images/Klogo.png" alt="Kane Elliott-Peace Logo" class="logo">
-     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="cv.html">Curriculum Vitae</a></li>
-        </ul>
-    </nav>
-   <h1 class="hero-title">Hello, I'm Kane</h1>
-   <p class="subtitle">an aspiring web developer</p>
-   <a href="portfolio.html" class="home-button-accent">See My Work</a> 
-</div>
+    <div class="hero">
+     <img src="/images/Klogo.png" alt="Kane Elliott-Peace Logo" class="logo">      <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+        <h1 class="hero-title">Hello, I'm Kane</h1>
+        <p class="subtitle">an aspiring web developer</p>
+        <a href="portfolio.html" class="home-button-accent">See My Work</a> 
+    </div>
 </header>
 
 <main>
-<aside>
+<aside class="about-me">
 <h1>About Me</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean posuere semper urna, ut pellentesque sem fermentum vel. Mauris luctus quis lectus nec luctus. Donec ut diam et neque eleifend varius sed quis erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean posuere semper urna, ut pellentesque sem fermentum vel. Mauris luctus quis lectus nec luctus. Donec ut diam et neque eleifend varius sed quis erat.</p>
 </aside>   
    
-<section>
-    <h1>Skills</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean posuere semper urna, ut pellentesque sem fermentum vel. Mauris luctus quis lectus nec luctus. Donec ut diam et neque eleifend varius sed quis erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean posuere semper urna, ut pellentesque sem fermentum vel. Mauris luctus quis lectus nec luctus. Donec ut diam et neque eleifend varius sed quis erat.</p>
+<section class="my-skills">
+   <div class="skills">
+      <h1>Skills</h1>
+       <p>My skillset has grew and shifted massively since starting my BSc Web Development course. I enjoy learning new skills on my own time schedule whether that be watching tutorials on youtube, lynda or just reading up on the latest news. My skills are mainly driven towards the digital scene; coding, video editing, marketing and photo editing.</p>
+        <div class="coding">
+        <img src="images/html-coding.svg" width="60px">
+        <h2>HTML/CSS</h2>
+        <p>These two languages are the hub of our coding experience at MMU. I enjoy writing in these two languages but feel there is so much more to learn than HTML and CSS...</p>
+        </div>
+        <img src="images/design.svg" width="60px">
+        <div class="design">
+        <h2>Design</h2>
+        <p>When building a website, software or app the design plays a big part and these beginning steps are crucial to ensure the best product is produced. Whilst studying I have produced sketches, wireframes, drawings, design mockups, card sorts, user journeys and much more. The more design methods the better!</p>
+        </div>
+        <img src="images/testing.svg" width="60px">
+        <div class="testing">
+        <h2>Testing</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean posuere semper urna, ut pellentesque sem fermentum vel. Mauris luctus quis lectus nec luctus. Donec ut diam et neque eleifend varius sed quis erat.</p>
+        </div>
+      </div>
 </section>
     
     
-<section>
+<section class="my-work">
     <h1>My work</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean posuere semper urna, ut pellentesque sem fermentum vel. Mauris luctus quis lectus nec luctus. Donec ut diam et neque eleifend varius sed quis erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean posuere semper urna, ut pellentesque sem fermentum vel. Mauris luctus quis lectus nec luctus. Donec ut diam et neque eleifend varius sed quis erat.</p>
+   <div class="center">
+        <div class="imgBox">
+          <img src="/images/examplework.png">
+          <div class="container">
+            <div class="content">
+                <h1>Example</h1>
+                <p>This is an example piece of text, it will explain my portfolio items.</p>
+            </div>  
+          </div>
+        </div>
+         <div class="imgBox">
+          <img src="/images/examplework.png">
+          <div class="container">
+            <div class="content">
+                <h1>Example</h1>
+                <p>This is an example piece of text, it will explain my portfolio items.</p>
+            </div>  
+          </div>
+        </div>
+         <div class="imgBox">
+          <img src="/images/examplework.png">
+          <div class="container">
+            <div class="content">
+                <h1>Example</h1>
+                <p>This is an example piece of text, it will explain my portfolio items.</p>
+            </div>  
+          </div>
+        </div>
+    </div>
+    
 </section>
+
+<section class="contact">
+   <div class="container-contact">
+        <h1 class="brand">Get in touch...</h1>
+        <div class="wrapper-contact">
+            <div class="company-info">
+                <h3>Kane Elliott-Peace</h3>
+                <ul>
+                     <li>Aspiring Web Developer</li>
+                     <li>07917457375</li>
+                     <li>kanerep@icloud.com</li>
+                </ul>
+            </div>
+            <div class="contact-form">
+                <h3>Email Me</h3>
+                <form method="POST" action="http://formspree.io/kanerep@icloud.com">
+                    <p>
+                        <label>Name</label>
+                        <input type="text" name="name" placeholder="First Name">
+                    </p>
+
+                    <p>
+                        <label>Email Address</label>
+                        <input type="email" name="email" placeholder="Email">
+                    </p>
+
+                    <p class="full">
+                        <label>Message</label>
+                        <textarea name="message" rows="5" placeholder="Type your message here"></textarea>
+                    </p>
+                    <p class="full">
+                        <button>Submit</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    
+    </div>
+   
+   
+
+</section>
+
 </main>
 
 <footer>
     <p>Follow me on socal media</p>
+    
     <div class="social-icons">
-    <img class="social-icon" src="" alt="twitter">
-    <img class="social-icon" src="" alt="instagram">
-    <img class="social-icon" src="" alt="github">
-    <img class="social-icon" src="" alt="linkedIn">
+    
+    <img class="social-icon" src="images/twitter.svg" alt="twitter">
+    <img class="social-icon" src="images/instagram.svg" alt="instagram">
+    <img class="social-icon" src="images/github.svg" alt="github">
+    <img class="social-icon" src="images/linkedIn.png" alt="linkedIn">
     </div>
-    <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
 </footer>
 </div>
 </body>
